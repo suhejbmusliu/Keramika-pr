@@ -105,6 +105,7 @@
         transition: 0.3s ease;
     }
 
+
     .navbar .links {
         padding: 0;
         padding-top: 30px;
@@ -129,8 +130,8 @@
     }
 
     #logoimg {
-        width: 80px;
-        padding-left: 30px;
+        width: 170px;
+        padding-left: 10px;
     }
 
     #menu-toggle:checked ~ .links .buttons {
