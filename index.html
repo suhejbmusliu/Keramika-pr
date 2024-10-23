@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+        <!--=============== CSS LINKS ===============-->
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style/nav.css">
+        <link rel="stylesheet" href="style/banner.css">
+        <link rel="stylesheet" href="style/about.css">
+        <link rel="stylesheet" href="style/service.css">
+        <link rel="stylesheet" href="style/gallery.css">
+        <link rel="stylesheet" href="style/text.css">
+        <link rel="stylesheet" href="style/contact.css">
+        <link rel="stylesheet" href="style/map.css">
+
+</head>
+<body>
+    
+    
+    <header class="header ">
+        <nav class="navbar">
+            <h2 class="logo">
+              <a href="#">
+                    <img src="assets/images/logo-shkall.jpg" alt="logo" id="logoimg">
+              </a>
+           </h2>
+           <input type="checkbox" id="menu-toggle" />
+           <label for="menu-toggle" id="hamburger-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+           </label>
+           <ul class="links">
+              <li><a href="#home" class="smoothScroll">Home</a></li>
+              <li><a href="#about" class="smoothScroll">About</a></li>
+              <li><a href="#services" class="smoothScroll">Services</a></li>
+              <li><a href="#gallery" class="smoothScroll">Gallery</a></li>
+              <li><a href="#contact" class="smoothScroll">Contact</a></li>
+            
+              
+              
+              
+           </ul>
+        </nav>
+    </header>
+
+         <section class="banner" id="home">
+                <div class="slider">
+                    <div class="list">
+                        <div class="item">
+                            <img src="assets/images/Banner-img.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/about-img.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/slide-img.jpg" alt="">
+                        </div>
+                    
+                        
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                       
+                    </ul>
+                </div>
+            </section>
+
+
+            <h1 class="head-txt reveal">Ne sigurojmë <span>REZULTATE</span> të shkëlqyera për çdo <span>NEVOJE</span></h1>
+
+
+            <section class="about-us reveal" id="about">
+                <div class="about">
+                  <img src="assets/images/about-img.jpg" class="pic" />
+                  <div class="text">
+                    <h2>About Us</h2>
+                    <h5><span>KERAMIKA DO.O.O</span></h5>
+                    <p>Kompania jonë, e themeluar në vitin 2002, ka ndërmarrë një angazhim të fortë për cilësinë dhe inovacionin në fushën e përpunimit të gurit. Me një ekip të specializuar dhe teknologji moderne, ne ofrojmë produkte të larta standarde që përmbushin nevojat e klientëve tanë. Pasionin tonë për artin e gurit e bashkojmë me përkushtimin për shërbim të shkëlqyer, duke krijuar zgjidhje unike për projekte të ndryshme."</p>
+                  </div>
+                </div>
+              </section>
+
+
+              <section class="services" id="services">
+                <div class="container reveal">
+                  <h2 class="section-title">Service</h2>
+                  <p class="description">
+                    "Kompania jonë ofron shërbime profesionale për montimin e shkallëve, kuzhinave dhe kaminave, duke garantuar cilësi dhe precizitet në çdo projekt. Ne gjithashtu specializohemi në vendosjen e pllaka të ndryshme, duke krijuar ambiente funksionale dhe estetike për çdo hapësirë. Me përkushtimin tonë për detajet dhe kënaqësinë e klientëve, ne sigurojmë rezultate të shkëlqyera për çdo nevojë."
+                  </p>
+              
+                  <div class="service-images">
+                    <div class="image-container">
+                      <img src="assets/images/servic-img2.jpg" alt="Shkallë">
+                    </div>
+                    <div class="image-container">
+                      <img src="assets/images/Service-img5.jpg" alt="Kuzhina">
+                    </div>
+                    <div class="image-container">
+                      <img src="assets/images/service-img3.jpg" alt="Kamin">
+                    </div>
+                    <div class="image-container">
+                      <img src="assets/images/service-img6.jpg" alt="Pllaka">
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section class="portfolio reveal" id="gallery">
+                <header class="section-head">
+                    <h1>GALLERY</h1>
+                </header>
+            
+                <main class="mainContainer">
+                    <!-- *****  Buttons Section Starts ***** -->
+                    <div class="button-group">
+                        <button class="button" data-filter=".ceramics">Ceramics</button>
+                        <button class="button active" data-filter=".work">My Work</button>
+                    </div>
+                    <!-- *****  Buttons Section Ends ***** -->
+            
+                    <!-- *****  Gallery Section Starts ***** -->
+                    <div class="gallery">
+                        <!-- Ceramics Images -->
+                        <div class="item ceramics">
+                            <img src="assets//gallery-img/type-1.jpg">
+                        </div>
+                        
+                        <div class="item ceramics">
+                            <img src="assets/gallery-img/type-2.jpg">
+                        </div>
+
+                        <div class="item ceramics">
+                            <img src="assets/gallery-img/type-3.jpg">
+                        </div>
+                        
+                        <div class="item ceramics">
+                            <img src="assets/gallery-img/type4.jpeg">
+                        </div>
+
+                        <div class="item ceramics">
+                            <img src="assets/gallery-img/type-5.jpg">
+                        </div>
+
+                        <div class="item ceramics">
+                            <img src="assets/gallery-img/type-6.jpg">
+                        </div>
+            
+                        <!-- Work Images -->
+                        <div class="item work">
+                            <img src="assets/gallery-img/img-1.jpg">
+                        </div>
+
+                        <div class="item work">
+                            <img src="assets/gallery-img/img-2.jpg">
+                        </div>
+
+                        <div class="item work">
+                            <img src="assets/gallery-img/img-3.jpg">
+                        </div>
+
+                        <div class="item work">
+                            <img src="assets/gallery-img/img-4.jpg">
+                        </div>
+
+                        <div class="item work">
+                            <img src="assets/gallery-img/img-5.jpg">
+                        </div>
+
+                        <div class="item work">
+                            <img src="assets/gallery-img/img-6.jpg">
+                        </div>  
+                        
+                      
+                    </div>
+                    <!-- *****  Gallery Section Ends ***** -->
+                </main>
+            </section>
+
+
+            <section class="achieve reveal" >
+                <div class="text-container">
+                    <p class="text-description">
+                        Kompania jonë ka finalizur edhe projekte në të gjithë Europën, duke ofruar cilësi dhe profesionalizëm të lartë. Projekti ynë më i fundit përfshin punën në Hallau te Zvicrres, dhe Dresden te Gjermanis. Gjithashtu, kemi finalizur projektet shteterore në dy stacionet e policisë në Serbi, në Vranjë dhe Leskoc. Nuk mungon as puna lokale, për të cilën angazhohemi në të gjithë Luginën e Preshevës.
+                    </p>
+                </div>
+
+            </section>
+
+
+
+            <section class="contact-section reveal" id="contact" >
+                <h2>Contact</h2>
+                <div class="contact-container">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>KERAMIKA D.OO MERMER GRANIT STARI PUT BUSTRAN</p>
+                    </div>
+            
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1235235598">+381 63 8686873 <br> +381 62 254036</a></p>
+                    </div>
+            
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@yoursite.com">s.fejzullahu@hotmail.com <br>sabedinfejzullahu1@gmail.com</a></p>
+                    </div>
+                </div>
+            </section>
+
+
+        <section class="map reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52976.06067890367!2d21.683799788998662!3d42.32612174691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354f9b7133b6845%3A0x70b8a854545b918b!2sKERAMIKA%20D.OO%20MERMER%20GRANIT%20STARI%20PUT%20BUSTRAN!5e0!3m2!1smk!2smk!4v1729626075467!5m2!1smk!2smk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>       
+        
+        <footer class="footer">
+            <p> Copyrigt@KERAMIKA.DO.O.O</p>
+        </footer>
+
+
+
+    <!--   *****   JQuery Link   *****   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!--   *****   Isotope Filter Link   *****  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
