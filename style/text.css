@@ -11,14 +11,14 @@
     margin-top: 100px;
 }
 
-.text-container {
+.textcontainer {
     max-width: 1300px;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
 }
 
-.text-description {
+.textdescription {
     font-size: 30px;
     line-height: 1.6;
 }

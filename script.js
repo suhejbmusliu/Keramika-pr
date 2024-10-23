@@ -20,6 +20,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+// Slider functionality
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slider .item');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+document.getElementById('next').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+});
+
+// Initial display
+showSlide(currentSlide);
+
+
+
+
 // JavaScript for closing menu on link click
 const menuToggle = document.getElementById('menu-toggle');
 const links = document.querySelectorAll('.links a');
@@ -201,4 +228,120 @@ $('.button-group .button').on('click', function(){
 // Initialize all .smoothScroll links
 jQuery(function($) {
     $.localScroll({ filter: '.smoothScroll' });
+});
+
+
+
+
+//translation
+// translations.js
+
+// Define translations for each language
+// Language translation data
+// Define translations for multiple languages
+const translations = {
+    en: {
+        navHome: "Home",
+        navAbout: "About",
+        navServices: "Services",
+        navGallery: "Gallery",
+        navContact: "Contact",
+        bannerTexts: [
+            "Welcome to KERAMIKA",
+            "Latest Machinery",
+            "Explore Our Work"
+        ],
+        aboutTitle: "About Us",
+        aboutSubtitle: "KERAMIKA DO.O.O",
+        aboutText: "Our company, founded in 2002, has undertaken a strong commitment to quality and innovation in the field of stone processing. With a specialized team and modern technology, we offer high standard products that meet the needs of our customers. We combine our passion for stone art with a commitment to excellent service, creating unique solutions for various projects.",
+        serviceTitle: "Service",
+        serviceDescription: "Our company offers professional services for the assembly of stairs, kitchens, and fireplaces, guaranteeing quality and precision in every project. We also specialize in the installation of various tiles, creating functional and aesthetic environments for any space. With our dedication to details and customer satisfaction, we ensure excellent results for every need.",
+        contactLocation: "Location",
+        contactPhone: "Phone",
+        headtext: "We provide excellent <span>RESULTS</span> for every <span>NEED</span>",
+        projectDescription: "Our company has also finalized projects throughout Europe, offering high quality and professionalism. Our most recent project includes work in Hallau, Switzerland, and Dresden, Germany. Also, we have finalized state projects in the two police stations in Serbia, in Vranje and Leskoc. There is also local work, which we engage in throughout the Presheva.",
+    },
+    sq: {
+        navHome: "Ballina",
+        navAbout: "Rreth Nesh",
+        navServices: "Shërbimet",
+        navGallery: "Galeria",
+        navContact: "Kontakti",
+        bannerTexts: [
+            "Mirë se erdhët në KERAMIKA",
+            "Makinat e Reja",
+            "Eksploroni Punën Tonë"
+        ],
+        aboutTitle: "Rreth Nesh",
+        aboutSubtitle: "KERAMIKA DO.O.O",
+        aboutText: "Kompania jonë, e themeluar në vitin 2002, ka marrë një angazhim të fortë për cilësinë dhe inovacionin në fushën e përpunimit të gurit. Me një ekip të specializuar dhe teknologji moderne, ne ofrojmë produkte me standarde të larta që përmbushin nevojat e klientëve tanë. Ne kombinojmë pasionin tonë për artin e gurit me një angazhim për shërbim të shkëlqyer, duke krijuar zgjidhje unike për projekte të ndryshme.",
+        serviceTitle: "Shërbimi",
+        serviceDescription: "Kompania jonë ofron shërbime profesionale për montimin e shkallëve, kuzhinave dhe kamineve, duke garantuar cilësi dhe saktësi në çdo projekt. Ne gjithashtu specializohemi në instalimin e pllakatave të ndryshme, duke krijuar mjedise funksionale dhe estetike për çdo hapësirë. Me përkushtimin tonë ndaj detajeve dhe kënaqësisë së klientëve, ne sigurojmë rezultate të shkëlqyera për çdo nevojë.",
+        contactLocation: "Lokacioni",
+        contactPhone: "Telefoni",
+        headtext: "Ne sigurojmë rezultate të shkëlqyera <span>REZULTATE</span> për çdo <span>NEVOJË</span>",
+        projectDescription: "Kompania jonë gjithashtu ka përfunduar projekte në të gjithë Evropën, duke ofruar cilësi të lartë dhe profesionalizëm. Projekti ynë më i fundit përfshin punë në Hallau, Zvicër, dhe Dresden, Gjermani. Gjithashtu, ne kemi përfunduar projekte shtetërore në dy stacione policie në Serbi, në Vranje dhe Leskoc. Ka gjithashtu punë lokale, në të cilat angazhohemi në të gjithë Preshevën.",
+    },
+    sr: {
+        navHome: "Početna",
+        navAbout: "O Nama",
+        navServices: "Usluge",
+        navGallery: "Galerija",
+        navContact: "Kontakt",
+        bannerTexts: [
+            "Dobrodošli u KERAMIKU",
+            "Najnovije Mašine",
+            "Istražite Naš Rad"
+        ],
+        aboutTitle: "O Nama",
+        aboutSubtitle: "KERAMIKA DO.O.O",
+        aboutText: "Naša kompanija, osnovana 2002. godine, preuzela je snažnu obavezu prema kvalitetu i inovacijama u oblasti obrade kamena. Sa specijalizovanim timom i modernom tehnologijom, nudimo proizvode visokih standarda koji zadovoljavaju potrebe naših kupaca. Spajamo našu strast prema umetnosti kamena sa obavezom za odličnu uslugu, stvarajući jedinstvena rešenja za različite projekte.",
+        serviceTitle: "Usluga",
+        serviceDescription: "Naša kompanija nudi profesionalne usluge za montažu stepenica, kuhinja i kamina, garantujući kvalitet i preciznost u svakom projektu. Takođe se specijalizujemo za ugradnju različitih pločica, stvarajući funkcionalne i estetske prostore za svaku okolinu. Sa našom posvećenošću detaljima i zadovoljstvu kupaca, obezbeđujemo odlične rezultate za svaku potrebu.",
+        contactLocation: "Lokacija",
+        contactPhone: "Telefon",
+        headtext: "Obezbeđujemo odlične <span>REZULTATE</span> za svaku <span>POTREBU</span>",
+        projectDescription: "Naša kompanija je takođe završila projekte širom Evrope, nudeći visoki kvalitet i profesionalizam. Naš najnoviji projekat uključuje rad u Hallauu, Švajcarska, i Drezdenu, Nemačka. Takođe, završili smo državne projekte u dve policijske stanice u Srbiji, u Vranju i Leskovcu. Takođe ima lokalnog rada, kojim se bavimo širom Preševa.",
+    }
+};
+
+// Function to update text based on selected language
+function updateText(language) {
+    document.querySelector('#nav-home').innerText = translations[language].navHome;
+    document.querySelector('#nav-about').innerText = translations[language].navAbout;
+    document.querySelector('#nav-services').innerText = translations[language].navServices;
+    document.querySelector('#nav-gallery').innerText = translations[language].navGallery;
+    document.querySelector('#nav-contact').innerText = translations[language].navContact;
+
+    // Update banner texts
+    const bannerTexts = translations[language].bannerTexts;
+    const items = document.querySelectorAll('.slider .item .text');
+    items.forEach((item, index) => {
+        item.innerText = bannerTexts[index];
+    });
+
+    // Update about section
+    document.querySelector('.about-us h2').innerText = translations[language].aboutTitle;
+    document.querySelector('.about-us h5').innerText = translations[language].aboutSubtitle;
+    document.querySelector('.about-us p').innerText = translations[language].aboutText;
+
+    // Update services section
+    document.querySelector('.services h2').innerText = translations[language].serviceTitle;
+    document.querySelector('.services .description').innerText = translations[language].serviceDescription;
+
+    // Update project description
+    document.querySelector('#project-description').innerText = translations[language].projectDescription;
+
+    // Update contact section
+    document.querySelector('.contact-item:nth-child(1) h3').innerText = translations[language].contactLocation;
+    document.querySelector('.contact-item:nth-child(2) h3').innerText = translations[language].contactPhone;
+    
+    // Update the header text
+    document.querySelector('.headtxt').innerHTML = translations[language].headtext; // Use innerHTML for <span> tags
+}
+
+// Language switcher event
+document.getElementById('language-select').addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+    updateText(selectedLanguage);
 });

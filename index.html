@@ -26,30 +26,35 @@
 <body>
     
     
-    <header class="header ">
+    <header class="header">
         <nav class="navbar">
             <h2 class="logo">
-              <a href="#">
+                <a href="#">
                     <img src="assets/images/logo-shkall.jpg" alt="logo" id="logoimg">
-              </a>
-           </h2>
-           <input type="checkbox" id="menu-toggle" />
-           <label for="menu-toggle" id="hamburger-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                </a>
+            </h2>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                     <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-           </label>
-           <ul class="links">
-              <li><a href="#home" class="smoothScroll">Home</a></li>
-              <li><a href="#about" class="smoothScroll">About</a></li>
-              <li><a href="#services" class="smoothScroll">Services</a></li>
-              <li><a href="#gallery" class="smoothScroll">Gallery</a></li>
-              <li><a href="#contact" class="smoothScroll">Contact</a></li>
-            
-              
-              
-              
-           </ul>
+                </svg>
+            </label>
+            <ul class="links">
+                <li><a href="#home" class="smoothScroll" id="nav-home">Home</a></li>
+                <li><a href="#about" class="smoothScroll" id="nav-about">About</a></li>
+                <li><a href="#services" class="smoothScroll" id="nav-services">Services</a></li>
+                <li><a href="#gallery" class="smoothScroll" id="nav-gallery">Gallery</a></li>
+                <li><a href="#contact" class="smoothScroll" id="nav-contact">Contact</a></li>
+            </ul>
+    
+            <!-- Language switcher -->
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="sq">Albanian</option>
+                    <option value="sr">Serbian</option>
+                </select>
+            </div>
         </nav>
     </header>
 
@@ -83,7 +88,7 @@
     
 
 
-            <h1 class="head-txt reveal">Ne sigurojmë <span>REZULTATE</span> të shkëlqyera për çdo <span>NEVOJE</span></h1>
+            <h1 class="headtxt reveal">We provide excellent <span>RESULTS</span> for every <span>NEED</span></h1>
 
 
             <section class="about-us reveal" id="about">
@@ -92,7 +97,7 @@
                   <div class="text">
                     <h2>About Us</h2>
                     <h5><span>KERAMIKA DO.O.O</span></h5>
-                    <p>Kompania jonë, e themeluar në vitin 2002, ka ndërmarrë një angazhim të fortë për cilësinë dhe inovacionin në fushën e përpunimit të gurit. Me një ekip të specializuar dhe teknologji moderne, ne ofrojmë produkte të larta standarde që përmbushin nevojat e klientëve tanë. Pasionin tonë për artin e gurit e bashkojmë me përkushtimin për shërbim të shkëlqyer, duke krijuar zgjidhje unike për projekte të ndryshme."</p>
+                    <p>Our company, founded in 2002, has undertaken a strong commitment to quality and innovation in the field of stone processing. With a specialized team and modern technology, we offer high standard products that meet the needs of our customers. We combine our passion for stone art with a commitment to excellent service, creating unique solutions for various projects.</p>
                   </div>
                 </div>
               </section>
@@ -102,7 +107,7 @@
                 <div class="container reveal">
                   <h2 class="section-title">Service</h2>
                   <p class="description">
-                    "Kompania jonë ofron shërbime profesionale për montimin e shkallëve, kuzhinave dhe kaminave, duke garantuar cilësi dhe precizitet në çdo projekt. Ne gjithashtu specializohemi në vendosjen e pllaka të ndryshme, duke krijuar ambiente funksionale dhe estetike për çdo hapësirë. Me përkushtimin tonë për detajet dhe kënaqësinë e klientëve, ne sigurojmë rezultate të shkëlqyera për çdo nevojë."
+                    "Our company offers professional services for the assembly of stairs, kitchens and fireplaces, guaranteeing quality and precision in every project. We also specialize in the installation of various tiles, creating functional and aesthetic environments for any space. With our dedication to details and customer satisfaction, we ensure excellent results for every need."
                   </p>
               
                   <div class="service-images">
@@ -131,7 +136,7 @@
                     <!-- *****  Buttons Section Starts ***** -->
                     <div class="button-group">
                         <button class="button" data-filter=".ceramics">Ceramics</button>
-                        <button class="button active" data-filter=".work">My Work</button>
+                        <button class="button active" data-filter=".work">Latest Work</button>
                     </div>
                     <!-- *****  Buttons Section Ends ***** -->
             
@@ -194,13 +199,12 @@
             </section>
 
 
-            <section class="achieve reveal" >
-                <div class="text-container">
-                    <p class="text-description">
-                        Kompania jonë ka finalizur edhe projekte në të gjithë Europën, duke ofruar cilësi dhe profesionalizëm të lartë. Projekti ynë më i fundit përfshin punën në Hallau te Zvicrres, dhe Dresden te Gjermanis. Gjithashtu, kemi finalizur projektet shteterore në dy stacionet e policisë në Serbi, në Vranjë dhe Leskoc. Nuk mungon as puna lokale, për të cilën angazhohemi në të gjithë Luginën e Preshevës.
+            <section class="achieve reveal">
+                <div class="textcontainer">
+                    <p class="textdescription" id="project-description">
+                        Our company has also finalized projects throughout Europe, offering high quality and professionalism. Our most recent project includes work in Hallau, Switzerland, and Dresden, Germany. Also, we have finalized state projects in the two police stations in Serbia, in Vranje and Leskoc. There is also local work, which we engage in throughout the Presheva.
                     </p>
                 </div>
-
             </section>
 
 
