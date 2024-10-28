@@ -89,6 +89,27 @@
         width: 100%;
     }
 
+    .navbar .links {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .language-switcher {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  #language-select {
+      width: 80px;
+      background: #fff;
+      color: #0B60A9;
+      border: none;
+      padding: 5px;
+      font-size: 1.2rem;
+  }
+
+
     .navbar .logo a {
         font-size: 1.5rem;
     }

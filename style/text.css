@@ -24,7 +24,7 @@
 }
 
 @media (max-width: 768px) {
-    .text-description {
-        font-size: 18px;
+     .textdescription {
+        font-size: 21px;
     }
 }
