@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
 // JavaScript for closing menu on link click
 const menuToggle = document.getElementById('menu-toggle');
 const links = document.querySelectorAll('.links a');
@@ -24,6 +28,10 @@ links.forEach(link => {
     menuToggle.checked = false; // Close the menu
   });
 });
+
+
+
+
 //banner image slide
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
@@ -40,6 +48,9 @@ prev.onclick = function(){
     active = active - 1 >= 0 ? active - 1 : lengthItems;
     reloadSlider();
 }
+
+
+
 // Automatically switch images every 3 seconds
 let refreshInterval = setInterval(()=> {next.click()}, 3000);
 // Function to move the slider and update the dots
@@ -55,6 +66,10 @@ function reloadSlider(){
     clearInterval(refreshInterval);
     refreshInterval = setInterval(()=> {next.click()}, 3000);
 }
+
+
+
+
 // Add click event for dots to manually switch to a specific image
 dots.forEach((li, key) => {
     li.addEventListener('click', ()=>{
@@ -62,10 +77,16 @@ dots.forEach((li, key) => {
         reloadSlider();
     })
 })
+
+
 // Recalculate position when window is resized
 window.onresize = function(event) {
     reloadSlider();
 };
+
+
+
+
 //scroll animation
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -83,6 +104,8 @@ function reveal() {
     }
   }
   
+
+
   window.addEventListener("scroll", reveal);
 // Initialize Isotope with "work" as the default filter
 var $galleryContainer = $('.gallery').isotope({
@@ -99,6 +122,9 @@ $('.button-group .button').on('click', function(){
         filter: value
     });
 });
+
+
+
 // Smoth scroll
 ;(function($) {
     function g(a, e, d) {
@@ -283,3 +309,33 @@ document.getElementById('language-select').addEventListener('change', (event) =>
     const selectedLanguage = event.target.value;
     updateText(selectedLanguage);
 });
+
+
+
+
+// gallery image 
+
+  // Get the lightbox elements
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox .close");
+
+  // Open lightbox on image click
+  document.querySelectorAll(".gallery .item img").forEach(img => {
+      img.addEventListener("click", () => {
+          lightbox.style.display = "flex";
+          lightboxImg.src = img.src;
+      });
+  });
+
+  // Close lightbox when 'x' is clicked
+  closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+  });
+
+  // Close lightbox when clicking outside the image
+  lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+          lightbox.style.display = "none";
+      }
+  });
