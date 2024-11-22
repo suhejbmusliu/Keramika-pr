@@ -29,19 +29,19 @@
 }
 
 .slider .item {
-    position: relative; /* Ensure that text inside is positioned relative to this container */
+    position: relative; 
 }
 
 .slider .item .text {
     position: absolute;
-    bottom: 50px; /* Adjust this value to position text vertically */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    color: white; /* Text color */
-    font-size: 50px; /* Font size */
+    bottom: 50px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white; 
+    font-size: 45px; 
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5); /* Optional background for text to make it stand out */
-    padding: 20px 20px; /* Padding around the text */
+    padding: 30px ; /* Padding around the text */
     border-radius: 5px; /* Rounded corners for the text background */
 }
 
@@ -106,5 +106,6 @@
         bottom: 30px; /* Move text closer to the bottom */
         left: 50%; /* Center horizontally */
         transform: translateX(-50%); /* Center horizontally */
+        padding: 10px 10px;
     }
 }

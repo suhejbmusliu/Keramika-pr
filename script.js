@@ -233,7 +233,7 @@ const translations = {
         navContact: "Kontakti",
         bannerTexts: [
             "Mirë se erdhët në KERAMIKA",
-            "Makinat e Reja",
+            "Makinat e Teknologjis së fundit",
             "Eksploroni Punën Tonë"
         ],
         aboutTitle: "Rreth Nesh",
