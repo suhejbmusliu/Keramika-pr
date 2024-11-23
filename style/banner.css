@@ -109,3 +109,30 @@
         padding: 10px 10px;
     }
 }
+
+
+@media screen and (orientation: landscape) and (max-width: 576px) {
+    .slider {
+        height: 30px; /* Adjust height for landscape mobile */
+    }
+
+    .slider .item .text {
+        font-size: 18px; /* Reduce font size for landscape mobile */
+        bottom: 15px;
+        padding: 5px;
+    }
+
+    .slider .buttons button {
+        width: 35px; /* Smaller buttons for landscape */
+        height: 35px;
+    }
+
+    .slider .dots li {
+        width: 6px;
+        height: 6px;
+    }
+
+    .slider .dots li.active {
+        width: 15px;
+    }
+}

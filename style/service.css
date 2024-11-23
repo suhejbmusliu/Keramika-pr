@@ -68,7 +68,7 @@
 
   .image-container {
     flex: 1 1 45%; /* 2 images per row */
-    height: 300px; /* Adjust height for smaller screens */
+    height: 200px; /* Adjust height for smaller screens */
   }
 }
 
